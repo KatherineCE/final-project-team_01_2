@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="folders">Dossiers</string>
+    <string name="estimates">Estimations</string>
+    <string name="exit">Sortie</string>
+    <string name="welcome">Bienvenu</string>
+    <string name="add">Ajouter</string>
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="folder_title">Titre du dossier</string>
+    <string name="add_a_new_folder">Ajouter un nouveau dossier</string>
+    <string name="title">Titre</string>
+</resources>
