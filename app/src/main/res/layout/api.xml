@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".APIActivity">
+
+    <!-- TextView for displaying the quiz stats -->
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Stats"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnCorrect"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!-- Button for "Correct" -->
+    <Button
+        android:id="@+id/btnCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct"
+        app:layout_constraintTop_toBottomOf="@id/txtId"
+        app:layout_constraintEnd_toStartOf="@id/btnIncorrect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Button for "Incorrect" -->
+    <Button
+        android:id="@+id/btnIncorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incorrect"
+        app:layout_constraintTop_toBottomOf="@id/txtId"
+        app:layout_constraintStart_toEndOf="@id/btnCorrect"
+        app:layout_constraintEnd_toEndOf="parent"
+       />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

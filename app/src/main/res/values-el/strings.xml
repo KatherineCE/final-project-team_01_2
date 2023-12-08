@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="folders">ντοσιέ</string>
+    <string name="estimates">Υπολογίζει</string>
+    <string name="exit">Εξοδος</string>
+    <string name="welcome">καλως ΗΡΘΑΤΕ</string>
+    <string name="add">Προσθήκη</string>
+    <string name="hello_blank_fragment">Γεια σου κενό θραύσμα</string>
+    <string name="folder_title">Τίτλος φακέλου</string>
+    <string name="add_a_new_folder">Προσθήκη νέου φακέλου</string>
+    <string name="title">Τίτλος</string>
+</resources>
