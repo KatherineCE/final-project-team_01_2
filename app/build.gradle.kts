@@ -1,16 +1,13 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.gms.google-services")
     id("kotlin-kapt")
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
     namespace = "com.example.final_project_team_01_2"
     compileSdk = 34
-    viewBinding {
-        enable = true
-    }
 
     defaultConfig {
         applicationId = "com.example.final_project_team_01_2"
@@ -43,8 +40,9 @@ android {
 dependencies {
 
     implementation("androidx.room:room-ktx:2.6.1")
-    implementation("com.google.firebase:firebase-common-ktx:20.4.2")
+    implementation("androidx.room:room-runtime:2.6.1")
     kapt("androidx.room:room-common:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -53,12 +51,4 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-
-    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
-    implementation("com.google.firebase:firebase-analytics")
-
-    //retrofit
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    //Gson
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 }

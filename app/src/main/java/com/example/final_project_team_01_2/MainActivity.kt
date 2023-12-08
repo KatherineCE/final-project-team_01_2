@@ -1,5 +1,4 @@
 package com.example.final_project_team_01_2
-import com.google.firebase.FirebaseApp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +14,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        FirebaseApp.initializeApp(this)
 
 
         foldersButton = findViewById(R.id.FoldersButton)
@@ -26,17 +24,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent1)
         }
 
-        estimatesButton.setOnClickListener {
-            // Intent to start APIActivity
-            val intent = Intent(this@MainActivity, APIActivity::class.java)
-            intent.putExtra("shouldFetchResults", true)
-            startActivity(intent)
+        estimatesButton.setOnClickListener{
+            println("Clicked")
         }
-
-
-
         exitButton.setOnClickListener{
             println("Clicked")
         }
     }
+
 }

@@ -7,14 +7,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.final_project_team_01_2.db.FolderEntity;
+
 import java.util.List;
 
 public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
 
     Context context;
-    List<Folder> items;
+    List<FolderEntity> items;
 
-    public MainAdapter(Context context, List<Folder> items) {
+    public MainAdapter(Context context, List<FolderEntity> items) {
         this.context = context;
         this.items = items;
     }
@@ -27,7 +29,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MainViewHolder holder, int position) {
-        holder.titleView.setText(items.get(position).getTitle());
+        holder.titleView.setText(items.get(position).getFolderName());
     }
 
     @Override
